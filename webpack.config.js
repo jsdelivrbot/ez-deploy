@@ -7,7 +7,6 @@ const VENDOR_LIBS = [
     'lodash', 'youtube-api-search'
 ];
 
-
 module.exports = {
     entry: {
         bundle: './src/index.jsx',
