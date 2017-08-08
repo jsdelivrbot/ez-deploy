@@ -8,6 +8,7 @@
     "clean": "rimraf dist",
     "build": "npm run clean && webpack --progress --colors",
     "build-prod": "npm run clean && webpack -p --progress --colors",
+    "deploy": "npm run build-prod && git subtree push --prefix dist origin gh-pages",
     "start": "webpack-dev-server --progress --colors"
   },
   "author": "",
