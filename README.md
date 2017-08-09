@@ -12,5 +12,19 @@
 
 ## Deployment platforms
 1. Easiest -- surge.sh
+    ```
+    surge -p dist
+    ```
 2. Easier -- gh-pages
+    ```
+    git subtree push --prefix dist origin gh-pages
+
+    OR
+
+    npm run deploy
+    ```
 3. Easy -- AWS S3
+    ```
+    s3-website create <bucket-name>
+    s3-website deploy dist
+    ```
